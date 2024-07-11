@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu icon</title>
+    <style>
+      .menu-icon > div {
+        height: 5px;
+        width: 30px;
+        background: black;
+        margin-bottom: 2px;
+        transition: 0.4s;
+      }
+      .middle {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .first {
+        transform: rotate(45deg) translate(0px, 10px);
+      }
+      .third {
+        transform: rotate(-45deg) translate(0px, -10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <script>
+      const classname = {
+        1: "first",
+        2: "middle",
+        3: "third",
+      };
+      const menu = document.querySelector(".menu-icon");
+      menu.addEventListener("click", function () {
+        [...this.children].forEach((child, index) => {
+          child.classList.toggle(classname[index + 1]);
+        });
+      });
+    </script>
+  </body>
+</html>
