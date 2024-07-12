@@ -1,3 +1,4 @@
 # UI Challenges - beginner
 
-Building UI components with vanilla js and css/sass
+Building simple UI components
+with - HTML, CSS/SASS & Javascript
