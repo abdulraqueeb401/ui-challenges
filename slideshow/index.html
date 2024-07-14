@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>SlideShow</title>
+  </head>
+  <body>
+    <div class="slideshow">
+      <div class="slide slide-active">
+        <img
+          class="slide-image"
+          alt="slide image"
+          src="./src/assets/img_lights_wide.jpg"
+        />
+        <p class="slide-caption">Slide one</p>
+      </div>
+      <div class="slide">
+        <img
+          class="slide-image"
+          alt="slide image"
+          src="./src/assets/img_mountains_wide.jpg"
+        />
+        <p class="slide-caption">Slide two</p>
+      </div>
+      <div class="slide">
+        <img
+          class="slide-image"
+          alt="slide image"
+          src="./src/assets/img_nature_wide.jpg"
+        />
+        <p class="slide-caption">Slide three</p>
+      </div>
+      <div class="slide">
+        <img
+          class="slide-image"
+          alt="slide image"
+          src="./src/assets/img_snow_wide.jpg"
+        />
+        <p class="slide-caption">Slide four</p>
+      </div>
+      <div class="prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+          stroke-width="1.5"
+          stroke="#000"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+      <div class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+          stroke-width="1.5"
+          stroke="#000000"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
+      <div class="dots">
+        <div data-id="1" class="dot dot-active"></div>
+        <div data-id="2" class="dot"></div>
+        <div data-id="3" class="dot"></div>
+        <div data-id="4" class="dot"></div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
